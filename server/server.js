@@ -115,6 +115,7 @@ app.post('/users',(req,res)=>{
     res.status(400).send(e);
   });
 });
+
 // POST /users/login {email,password}
 app.post('/users/login',(req,res)=>{
   var body = _.pick(req.body,['email','password']);
